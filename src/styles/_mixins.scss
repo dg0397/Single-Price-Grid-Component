@@ -35,7 +35,8 @@
         border-radius: 5px;
         border:none;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-        transition: all 0.1s ease-in 
+        transition: all 0.1s ease-in;
+        cursor: pointer
     }
     .btn:hover{
         background:$color-txt-hover;
