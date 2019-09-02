@@ -6,4 +6,4 @@ Frontend Mentor Challenge
  2)open a terminal in the project folder and type 
  -npm install 
  -npm run start
- ## challenge page <a href="https://beta.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" target="_blank>Here</a>
+challenge page <a href="https://beta.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" target="_blank>Here</a>
