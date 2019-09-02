@@ -1,0 +1,112 @@
+/*##Colors*/
+/*###Primary*/
+/*###Neutral*/
+/*## Typography*/
+/*### Body*/
+/*### Font*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif; }
+
+body {
+  background: #e5eff5; }
+
+.container__main {
+  display: grid;
+  grid-template: repeat(3, auto)/1fr;
+  margin: 3rem auto;
+  text-align: left;
+  margin-bottom: 1rem;
+  min-width: 300px;
+  width: 75%;
+  max-width: 500px; }
+  .container__main #main {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px 5px 0 0; }
+    .container__main #main h1 {
+      color: #2ab2af; }
+    .container__main #main h2 {
+      color: #c0df34; }
+    .container__main #main p {
+      color: #98a6bd;
+      line-height: 2rem; }
+    .container__main #main > * {
+      margin-bottom: 1rem; }
+    @media screen and (min-width: 1024px) {
+      .container__main #main {
+        grid-column: 1 / -1; } }
+  .container__main #left {
+    padding: 1rem;
+    background-color: #2ab2af; }
+    .container__main #left h2 {
+      color: white; }
+    .container__main #left p {
+      color: white;
+      line-height: 2rem; }
+    .container__main #left > * {
+      margin-bottom: 1rem; }
+    .container__main #left span {
+      font-size: 2rem;
+      margin-right: .5rem;
+      opacity: 1; }
+    .container__main #left .container__btn {
+      width: 85%;
+      margin: 0 auto; }
+      .container__main #left .container__btn .btn {
+        width: 100%;
+        margin-bottom: .5rem;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        text-transform: capitalize;
+        color: white;
+        background: #c0df34;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.1s ease-in; }
+      .container__main #left .container__btn .btn:hover {
+        background: #c8e34f;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); }
+      .container__main #left .container__btn .btn:active {
+        margin-top: .1rem;
+        background: #a4c21e; }
+    @media screen and (min-width: 1024px) {
+      .container__main #left {
+        border-radius: 0 0 0 5px; } }
+  .container__main #right {
+    padding: 1rem;
+    background-color: #2ebdba;
+    border-radius: 0 0 5px 5px; }
+    .container__main #right h2 {
+      color: white; }
+    .container__main #right ul {
+      color: #e5eff5;
+      list-style: none; }
+      .container__main #right ul li {
+        margin-bottom: .3rem; }
+    .container__main #right > * {
+      margin-bottom: 1rem; }
+    @media screen and (min-width: 1024px) {
+      .container__main #right {
+        border-radius: 0 0 5px 0; } }
+  @media screen and (min-width: 1024px) {
+    .container__main {
+      grid-template: repeat(2, auto)/repeat(2, 1fr);
+      max-width: 720px; }
+      .container__main .container {
+        padding: 2.5rem !important; } }
+
+footer {
+  padding-bottom: 1rem; }
+  footer .attribution {
+    font-size: 11px;
+    text-align: center; }
+  footer .attribution a {
+    color: #3e52a3; }
+

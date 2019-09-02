@@ -1,0 +1,66 @@
+
+@mixin container($bg-color,$color-text-1,$color-text-2){
+    padding: 1rem;
+    background-color: $bg-color;
+    h2{
+        color:$color-text-1;
+    }
+    p{
+        color:$color-text-2;
+        line-height: 2rem
+    }
+    > * {
+        margin-bottom: 1rem;
+    }
+}
+
+@mixin header($color-header){
+    h1{
+        color:$color-header
+    }
+}
+
+@mixin btn($bg-btn,$color-txt-btn,$color-txt-hover,$color-txt-active){
+    .btn{
+        width: 100%;
+        margin-bottom: .5rem;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        text-transform: capitalize;
+        color: $color-txt-btn;
+        background:$bg-btn ;
+        border-radius: 5px;
+        border:none;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.1s ease-in 
+    }
+    .btn:hover{
+        background:$color-txt-hover;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    }
+    .btn:active{
+        margin-top: .1rem;
+        background: $color-txt-active;
+    }
+}
+
+@mixin container-list($bg-color,$color-text-1,$color-text-2){
+    padding: 1rem;
+    background-color: $bg-color;
+    h2{
+        color:$color-text-1;
+    }
+    ul{
+        color:$color-text-2;
+        list-style: none;
+        li{
+            margin-bottom: .3rem
+        }
+    }
+    > * {
+        margin-bottom: 1rem;
+    }
+}

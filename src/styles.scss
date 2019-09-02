@@ -1,0 +1,62 @@
+@import "./styles/basic";
+@import "./styles/mixins";
+
+body{
+    background: $light-gray
+}
+
+.container__main{
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    margin:3rem auto;
+    text-align: left;
+    margin-bottom: 1rem;
+    min-width: 300px;
+    width: 75%;
+    max-width: 500px;
+    #main{
+        @include header($cyan);
+        @include container($main-white,$bright-yellow,$grayish-blue);
+        border-radius: 5px 5px 0 0;
+        @media screen and(min-width:1024px) {
+            grid-column: 1 / -1
+        }
+    }
+    #left{
+        @include container($cyan,$main-white,$main-white);
+        span{
+            font-size: 2rem;
+            margin-right: .5rem;
+            opacity: 1;
+        }
+        .container__btn{
+            width: 85%;
+            margin: 0 auto;
+            @include btn($bright-yellow,$main-white,$light-bright-yellow,$dark-bright-yellow)
+        }
+        @media screen and(min-width:1024px) {
+            border-radius: 0 0 0 5px;
+        }    
+        
+    }
+    #right{
+        @include container-list($light-cyan,$main-white,$light-gray);
+        border-radius: 0 0 5px 5px;
+        @media screen and(min-width:1024px) {
+            border-radius: 0 0 5px 0;
+        }    
+    }
+    @media screen and(min-width:1024px) {
+        grid-template: repeat(2,auto) / repeat(2,1fr);
+        max-width: 720px;
+        .container{
+            padding: 2.5rem !important
+        }
+    }
+}
+
+footer{
+    padding-bottom: 1rem;
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
